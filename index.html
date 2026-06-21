@@ -70,34 +70,63 @@
  <i class="fas fa-envelope"></i>   
 </button>
 <a href="#projects" class="scroll">
-    <div class="scroll__icon click"></div>
-</a>
+</a>  
+  <div class="scroll__icon click"></div>
 <div class="modal">
   <div class="modal__half modal__about">
     <h3 class="modal__title modal__title--about">
       Here's a bit about me.</h3>
-      <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+      <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
       <p class="modal__para">
         I’m a fierce and loyal <b class="purple">dog Mom</b> who brings that same <b class="purple">unwavering dedication</b> into my professional life.
        <br>
-        After <b class="purple">15 years</b> with Walmart—leading teams, protecting people, and driving results—I’m now channeling that <b class="purple">discipline</b> and <b class="purple">commitment</b> into software engineering. I <b class="purple">advocate</b> for my “pack,” whether that’s my dogs or my team, and I approach every challenge with ownership, integrity, and a drive to build solutions that make life better for others.
+        After <b class="purple">15 years</b> with Walmart—leading teams, protecting people, and driving results—I’m now channeling that <b class="purple">discipline</b> and <b class="purple">commitment</b> into software engineering. I <b class="purple">advocate</b> for my “pack,” and my team. I approach every challenge with ownership, integrity, and a drive to build solutions.
       </p>
       <div class="modal__languages">
         <figure class="modal__language">
-          <img class=modal__language--img sr="https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png" alt="">
+          <img class=modal__language--img src="https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png" alt="">
         </figure>
         <figure class="modal__language">
-          <img class=modal__language--img sr="https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo-thumbnail.png" alt="">
+          <img class=modal__language--img src="https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo-thumbnail.png" alt="">
         </figure>
         <figure class="modal__language">
-          <img class=modal__language--img sr="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol-500x281.png" alt="">
+          <img class=modal__language--img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol-500x281.png" alt="">
         </figure>
         <figure class="modal__language">
-          <img class=modal__language--img sr="https://pluspng.com/img-png/react-logo-png-react-native-logo-svg-hd-png-img-transparent-png-image-860x853.png" alt="">
+          <img class=modal__language--img src="https://pluspng.com/img-png/react-logo-png-react-native-logo-svg-hd-png-img-transparent-png-image-860x853.png" alt="">
         </figure>
       </div>
   </div>
-    <div class="modal__half modal__contact">Lets have a chat!</div>
+    <div class="modal__half modal__contact">
+     <h3 class="modal__title modal__title--contact">
+      Let's have a chat!</h3>
+     <h3 class="modal__sub-title modal__sub-title--contact">
+      I would love to hear from you!</h3>
+      <form id="contact__form" action="">
+        <div class="form__item">
+          <label class="form__item--label">Name</label>
+          <input class="input" name="user_name" type="text" required></input>
+        </div>
+    <div class="form__item">
+        <label class="form__item--label">Email</label>
+        <input class="input" name="user_email" type="email" required></input>
+      </div>
+      <div class="form__item">
+        <label class="form__item--label">Message</label>
+        <textarea class="input" name="message" type="text" required></textarea>
+      </div>
+      <button id="contact__submit" class="form__submit">
+        Send it my way
+      </button>
+    </form>
+    <div class="modal__overlay modal__overlay--loading">
+      <i class="fas fa-spinner"></i>
+    </div>
+    <div class="modal__overlay modal__overlay--success">
+      Thanks for the message! Looking forward to speaking with you.
+    </div>
+  </div>
+  <i class="fas fa-times modal__exit click"></i>
 </div>
 </section>
    <section id="projects">
