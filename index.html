@@ -6,6 +6,20 @@
     <title>Heidi Canaday</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/7e5cd01a9f.js" crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+  <script>
+  (function(){
+      emailjs.init({
+        publicKey: "QBleevghv3AtMChmb",
+      });
+   })();
+</script>
+
+<script src="index.js"></script>
 </head>
 <body>
    <section id="landing-page">
@@ -84,16 +98,16 @@
       </p>
       <div class="modal__languages">
         <figure class="modal__language">
-          <img class=modal__language--img src="https://images.seeklogo.com/logo-png/20/1/html5-logo-png_seeklogo-206834.png" alt="">
+          <img class=modal__language--img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="">
         </figure>
         <figure class="modal__language">
-          <img class=modal__language--img src="https://w7.pngwing.com/pngs/393/49/png-transparent-css-logo-thumbnail.png" alt="">
+          <img class=modal__language--img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="">
         </figure>
         <figure class="modal__language">
-          <img class=modal__language--img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol-500x281.png" alt="">
+          <img class=modal__language--img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="">
         </figure>
         <figure class="modal__language">
-          <img class=modal__language--img src="https://pluspng.com/img-png/react-logo-png-react-native-logo-svg-hd-png-img-transparent-png-image-860x853.png" alt="">
+          <img class=modal__language--img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
         </figure>
       </div>
   </div>
@@ -102,7 +116,7 @@
       Let's have a chat!</h3>
      <h3 class="modal__sub-title modal__sub-title--contact">
       I would love to hear from you!</h3>
-      <form id="contact__form" action="">
+      <form id="contact__form" onsubmit="contact(event)">
         <div class="form__item">
           <label class="form__item--label">Name</label>
           <input class="input" name="user_name" type="text" required></input>

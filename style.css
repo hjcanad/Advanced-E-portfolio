@@ -384,6 +384,7 @@ MODAL
   display: flex;
   align-items: center;
   justify-content: center; 
+  z-index: -1;
   }
   
 
@@ -399,6 +400,10 @@ MODAL
  font-weight: 700;
  text-align: center;
  padding: 28px;
+  }
+
+  .modal__overlay--visible {
+    z-index: 1;
   }
 
   .fa-spinner {
@@ -420,7 +425,7 @@ transform: rotate(360deg);
     top: 30px;
     right: 40px;
     color: white;
-    font-size: 36pc;
+    font-size: 36px;
     z-index: 100;
   }
 
