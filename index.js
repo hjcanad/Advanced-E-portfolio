@@ -24,11 +24,17 @@ loading.classList.add("modal__overlay--visible");
     .catch(() => {
      loading.classList.remove("modal__overlay--visible");
       alert(
-    "The email service is temporarily unavailable. Please contact me directly on hjcanad@gmail.com."
+    "The email service is temporarily unavailable. Please contact me directly at hjcanad@gmail.com."
     ); 
   })
 }
 
+let isModalOpen = false;
 function toggleModal() {
-    
+    if (isModalOpen) {
+        isModalOpen = false
+        return document.body.classList.remove("modal--open")
+    }
+    isModalOpen = true;
+ document.body.classList.add ( "modal--open");  
 }
